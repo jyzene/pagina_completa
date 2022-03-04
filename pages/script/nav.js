@@ -2,7 +2,6 @@ function muestraMenu(evento) {
   evento.preventDefault();
   evento.stopPropagation();
   document.querySelector(".menu-nav").classList.toggle("visible");
-  document.getElementById("main").style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function ocultaMenu(evento) {
