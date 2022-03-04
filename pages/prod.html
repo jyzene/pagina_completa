@@ -1,0 +1,278 @@
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>DAZZLE</title>
+	<script src="https://kit.fontawesome.com/67fe543a2c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	 <script src="https://www.w3schools.com/lib/w3.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+	integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+	integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="responsive.css"/>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<button id="mostrar-menu" class="mostrar-menu">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+
+			<a class="logo "href="prueba.html"><img src="img/logo_completo.png"></a>
+
+			<section class="buttons">
+				<button href="#bloque1" class="lanzador">
+					<!--<img src="img/search.svg">-->
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
+
+				<button onclick="document.getElementById('id01').style.display='block'" class="user">
+					<i class="fa-solid fa-user"></i>
+				</button>
+
+				<button id="mostrar-cart" class="mostrar-cart">
+					<i class="fa-solid fa-cart-shopping"></i>
+				</button>
+			</section>
+		</div>
+		<div class="menu-nav">
+			<button id="cerrar-menu" class="cerrar-menu" aria-label="Cerrar">
+			&times;
+			</button>
+			<ul>
+				<li class="account"><a href="user.html">INICIAR SESION</a></li>
+				<li><a href="envios.html">ENVIOS</a></li>
+				<li><a href="about_us.html">SOBRE NOSOTROS</a></li>
+				<li><a href="ubicacion.html">UBICACIONES</a></li>
+				<li><a href="contact.html">CONTACTO Y PREGUNTAS FRECUENTES</a></li>
+				<li><a href="tyc.html">TERMINOS Y CONDICIONES</a></li>
+			</ul>
+		</div>
+		<script src="script/nav.js"></script>
+		<div id="bloque1" class="bloque-contenedor">
+			<div class="bloque-contenido">
+				<input type="text" placeholder="Busca..." name="">
+				<nav class="categorias">
+					<ul>
+						<li><a href="#">Joyeria y Accesorios</a></li>
+						<li><a href="#">Ropa</a></li>
+						<li><a href="#">LifeStyle</a></li>
+						<!--ya no por el momento, va junto a lisfestyle<li><a href="#">Beauty</a></li>-->
+						<li><a href="#">Sale</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<script src="script/search.js"></script>
+		<div class="cart-nav">
+			<button id="cerrar-cart" class="cerrar-cart" aria-label="Cerrar">
+				<img src="img/x.svg">
+			</button>
+			<h2>Carrito</h2>
+			<hr>
+			<p class="cart-text">¡tu carrito esta vacío!</p>
+		</div>
+		<script src="script/cart.js"></script>
+	</header>
+
+	<div id="id01" class="w3-modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-hor-8 w3-display-topright">&times;</span>
+		<div class="w3-modal-content w3-card-8 w3-animate-top" style="max-width:600px">
+
+			<section class="form">
+				<div class="login">
+					<h5>Iniciar sesión</h5>
+					<p class="info">Ingresa tu correo electrónico y tu contraseña</p>
+					<input type="text" id="email" name="email" placeholder="correo electrónico">
+					<input type="password" id="password" name="password" placeholder="contraseña">
+					<p class="forgot"><a href="#">¿Olvidaste tu contraseña?</a></p>
+					<button id="log" class="log" aria-label="log">Iniciar sesión</button>
+					<hr size="2" width="218px" color="black">
+					<p class="create"><a href="account.html">¿No tienes una cuenta? Créala aquí</a></p>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+
+		<!--quitar
+		<p class="text1">
+			<a href="https://ohdazzlestore.com/iniciar-sesion?create_account=1">¡Recibe un 15% de descuento por tu registro!</a>
+		</p>
+		<p class="text1">
+			<a href="mailto:info@ohdazzlestore.com">info@ohdazzlestore.com</a>
+		</p>
+	<section class="menu">
+
+	</section>-->
+
+        <section class="product">
+					<div class="Card">
+						<div class="w3-display-container" style="max-width:650px; padding-top: 0">
+							<img class="mySlides" src="img/1.png" style="width:100%;display:none">
+							<img class="mySlides" src="img/2_1.jpg" style="width:100%">
+							<img class="mySlides" src="img/2_2.png" style="width:100%;display:none">
+							<div class="w3-row-padding w3-section">
+
+								<div class="w3-col s4">
+									<img class="demo w3-opacity w3-hover-opacity-off" src="img/1.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+								</div>
+								<div class="w3-col s4">
+									<img class="demo w3-opacity w3-hover-opacity-off" src="img/2_1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+								</div>
+								<div class="w3-col s4">
+									<img class="demo w3-opacity w3-hover-opacity-off" src="img/2_2.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+								</div>
+							</div>
+							<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+							<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+						</div>
+						<div class="prod_content">
+							<div class="productName">
+								<h3>cristales simples, piercing</h3>
+							</div>
+							<div class="price">
+								<h4>Q65.00</h4>
+							</div>
+							<div class="description">
+	              <p>Piercing para ombligo cristales simple</p>
+	              <p class="material">Material: Acero Quirúrgico</p>
+	              <p>Medidas: 10mm </p>
+	              <input type="number" id="quantity" name="quantity">
+	              <p class="warning">¡Quedan pocas unidades disponibles!</p>
+	              <button href="#" class="wishlist">
+	                <img src="img/heart.svg"> añadir a wishlist
+	              </button><br>
+	              <button id="aniadir" class="aniadir" aria-label="aniadir">Añadir al Carrito</button>
+	              <div class="share">
+	                <h5>¡Compártelo!</h5>
+	                <button href="#" class="face">
+	                  <img src="img/facebook.svg">
+	                </button>
+	                <button href="#" class="twitter">
+	                  <img src="img/twitter.svg">
+	                </button>
+	                <button href="#" class="instagram">
+	                  <img src="img/instagram.svg">
+	                </button>
+	              </div>
+	              <div class="politics">
+	                <button href="#" class="security">
+	                  <img src="img/check-circle.svg"><p>Política de seguridad</p>
+	                </button>
+	                <button href="#" class="truck">
+	                  <a href="envios.html" style="text-decoration: none"><img src="img/truck.svg"><p>Política de envío</p></a>
+	                </button>
+	              </div>
+	            </div>
+						</div>
+        </section>
+
+
+				<footer class="grid">
+						<article class="footer-nav">
+								<section class="store">
+									<h6>Dazzle Store</h6>
+									<nav class="footer1">
+										<ul>
+											<li><a href="envios.html">Envios</a></li>
+											<li><a href="about_us.html">Sobre Nosotros</a></li>
+											<li><a href="ubicacion.html">Ubicaciones</a></li>
+											<li><a href="contact.html">Contacto y Preguntas Frecuentes</a></li>
+											<li><a href="tyc.html">Terminos y Condiciones</a></li>
+										</ul>
+									</nav>
+								</section>
+								<section class="prod">
+									<h6>Productos</h6>
+									<nav class="footer3">
+										<ul>
+											<li><a href="#">Ofertas</a></li>
+											<li><a href="#">Novedades</a></li>
+										</ul>
+									</nav>
+								</section>
+						</article>
+						<article class="footer-nav">
+							<h6>Ubicación</h6>
+							<nav class="footer2">
+								<ul>
+									<li><a href="#">DAZZLE Plaza del Arco, Antigua Guatemala</a></li>
+									<li><a href="#">(502) 7821-6031</a></li>
+									<li><a href="#">DAZZLE Store C.C. Miraflores, 1er Nivel, Fase 3</a></li>
+									<li><a href="#">(502) 2474-1242</a></li>
+									<li><a href="#">info@ohdazzlestore.com</a></li>
+								</ul>
+							</nav>
+						</article>
+						<article class="footer-nav">
+							<section class="subscribe">
+								<h5>¡Suscríbete!</h5>
+								<p class="info">Obtén las primeras noticias de nuevos productos, ventas, contenido exclusivo, eventos y más.</p>
+								<input type="text" id="email" name="email" placeholder="example@gmail.com">
+								<button id="enviar" class="enviar" aria-label="enviar">Enviar</button>
+							</section>
+						</article>
+						<article class="social-net">
+							<ul class="social">
+								<li><a href="https://www.facebook.com/dazzlegt"><i class="fa-brands fa-facebook-f"></i></a></li>
+								<li><a href="https://www.instagram.com/dazzlegt/"><i class="fa-brands fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+							</ul>
+							<div class="container">
+								<p class="rights">DAZZLE Store. Todos los Derechos Reservados @ 2022</p>
+							</div>
+				</article>
+				</footer>
+
+				<script>
+					function currentDiv(n) {
+					  showDivs(slideIndex = n);
+					}
+
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  var dots = document.getElementsByClassName("demo");
+					  if (n > x.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+					    x[i].style.display = "none";
+					  }
+					  for (i = 0; i < dots.length; i++) {
+					    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+					  }
+					  x[slideIndex-1].style.display = "block";
+					  dots[slideIndex-1].className += " w3-opacity-off";
+					}
+			</script>
+
+			<script>
+							var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length} ;
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex-1].style.display = "block";
+				}
+			</script>
+  </body>
+</html>

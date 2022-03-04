@@ -1,0 +1,94 @@
+.contenedor-texto{
+  margin-top: 8em;
+}
+
+.contenedor-texto h2{
+  font-family: DM Serif Display;
+  font-size: 42px;
+  color: #F26241;
+  text-align: center;
+}
+
+.contenedor-texto p{
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  margin: 15px;
+}
+
+.sections{
+  margin-bottom: 100px;
+}
+
+@media (min-width: 1300px){
+  .sections{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+}
+
+.ubicacion_1{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
+.ubicacion_1 .card_1{
+  position: relative;
+	width: 650px;
+	height: 400px;
+	margin: 10px;
+	overflow: hidden;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ubicacion_1 .card_1 .img_Bx{
+  position: relative;
+	width: 50%;
+  height: 300px;
+	overflow: hidden;
+  margin: 40px;
+}
+
+.ubicacion_1 .card_1 .img_Bx img{
+  position: absolute;
+	width: 100%;
+	height: 100%;
+  left: 0;
+	object-fit: cover;
+	transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 600px){
+  .ubicacion_1 .card_1 .img_Bx{
+    display: none;
+  }
+}
+
+.ubicacion_1 .card_1 .content1{
+  text-align: center;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.ubicacion_1 .card_1 .content1 h4{
+  font-family: DM Serif Display;
+  font-size: 24px;
+}
+
+.ubicacion_1 .card_1 .content1 .direccion{
+  font-family: Josefin Sans;
+  font-size: 14px;
+}
+
+.ubicacion_1 .card_1 .content1 .horarios{
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  font-family: Josefin Sans;
+}

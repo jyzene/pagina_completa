@@ -1,0 +1,20 @@
+.sectiont{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+
+
+.sectiont .info{
+  text-align: center;
+  max-width: 700px;
+  margin: 20px;
+}
+
+.info p{
+  text-align: justify;
+}
+
+.info .garantias{
+  margin: 20px;
+}

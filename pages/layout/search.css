@@ -1,0 +1,123 @@
+.bloque-contenedor{
+  overflow: hidden;
+  max-height: 0;
+  background-color: #FFFFFF;
+  transition: max-height .5s;
+}
+
+.bloque-contenido{
+  padding: 0;
+}
+
+.bloque-contenido input{
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-family: DM Serif Display;
+  font-weight: bold;
+  font-size: 24px;
+  font-color: #080908;
+  padding: 10px;
+  margin-left: 25px;
+  width: 90%;
+}
+
+.bloque-contenido input::placeholder{
+  color: #000000;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.bloque-contenido .categorias{
+  text-align: center;
+  width: 100%;
+}
+
+.bloque-contenido .categorias ul{
+  padding: 20px;
+  margin: auto;
+}
+
+.bloque-contenido .categorias ul li{
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 10px;
+}
+
+.bloque-contenido .categorias ul li a{
+  text-decoration: none;
+  font-family: Josefin Sans;
+  font-size: 14px;
+  color: #7E7979;
+}
+
+.bloque-contenido .categorias ul li a:hover{
+  color: #F26241;
+  transition: .3s;
+}
+
+@media(min-width: 950px){
+
+  .bloque-contenedor{
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    background-color: #FFFFFF;
+    transition: max-height .5s;
+  }
+
+  .bloque-contenido{
+    padding: 1rem 2rem;
+  }
+
+  .bloque-contenido input{
+    width: calc(80% - 50px);
+    padding: 10px 15px;
+    margin-left: 150px;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000000;
+    font-family: DM Serif Display;
+    font-weight: bold;
+    font-size: 48px;
+    font-color: #080908;
+  }
+
+  .bloque-contenido input::placeholder{
+    color: #000000;
+    font-weight: bold;
+    opacity: 1;
+  }
+
+  .bloque-contenido .categorias{
+    position: relative;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .bloque-contenido .categorias ul{
+    overflow-x: auto;
+    white-space: nowrap;
+    list-style: none;
+  }
+
+  .bloque-contenido .categorias ul li{
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 1rem;
+    left: 0;
+  }
+
+  .bloque-contenido .categorias ul li a{
+    text-decoration: none;
+    font-family: Josefin Sans;
+    color: #7E7979;
+  }
+
+  .bloque-contenido .categorias ul li a:hover{
+    color: #F26241;
+    transition: .3s;
+  }
+}

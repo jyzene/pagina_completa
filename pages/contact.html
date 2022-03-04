@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>DAZZLE</title>
+	<script src="https://kit.fontawesome.com/67fe543a2c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+	 <script src="https://www.w3schools.com/lib/w3.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+	integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+	integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="responsive.css"/>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<button id="mostrar-menu" class="mostrar-menu">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+
+			<a class="logo "href="prueba.html"><img src="img/logo_completo.png"></a>
+
+			<section class="buttons">
+				<button href="#bloque1" class="lanzador">
+					<!--<img src="img/search.svg">-->
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
+
+				<button onclick="document.getElementById('id01').style.display='block'" class="user">
+					<i class="fa-solid fa-user"></i>
+				</button>
+
+				<button id="mostrar-cart" class="mostrar-cart">
+					<i class="fa-solid fa-cart-shopping"></i>
+				</button>
+			</section>
+		</div>
+		<div class="menu-nav">
+			<button id="cerrar-menu" class="cerrar-menu" aria-label="Cerrar">
+			&times;
+			</button>
+			<ul>
+				<li class="account"><a href="user.html">INICIAR SESION</a></li>
+				<li><a href="envios.html">ENVIOS</a></li>
+				<li><a href="about_us.html">SOBRE NOSOTROS</a></li>
+				<li><a href="ubicacion.html">UBICACIONES</a></li>
+				<li><a href="contact.html">CONTACTO Y PREGUNTAS FRECUENTES</a></li>
+				<li><a href="tyc.html">TERMINOS Y CONDICIONES</a></li>
+			</ul>
+		</div>
+		<script src="script/nav.js"></script>
+		<div id="bloque1" class="bloque-contenedor">
+			<div class="bloque-contenido">
+				<input type="text" placeholder="Busca..." name="">
+				<nav class="categorias">
+					<ul>
+						<li><a href="#">Joyeria y Accesorios</a></li>
+						<li><a href="#">Ropa</a></li>
+						<li><a href="#">LifeStyle</a></li>
+						<!--ya no por el momento, va junto a lisfestyle<li><a href="#">Beauty</a></li>-->
+						<li><a href="#">Sale</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<script src="script/search.js"></script>
+		<div class="cart-nav">
+			<button id="cerrar-cart" class="cerrar-cart" aria-label="Cerrar">
+				<img src="img/x.svg">
+			</button>
+			<h2>Carrito</h2>
+			<hr>
+			<p class="cart-text">¡tu carrito esta vacío!</p>
+		</div>
+		<script src="script/cart.js"></script>
+	</header>
+
+
+	<div id="id01" class="w3-modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-hor-8 w3-display-topright">&times;</span>
+		<div class="w3-modal-content w3-card-8 w3-animate-top" style="max-width:600px">
+
+			<section class="form">
+				<div class="login">
+					<h5>Iniciar sesión</h5>
+					<p class="info">Ingresa tu correo electrónico y tu contraseña</p>
+					<input type="text" id="email" name="email" placeholder="correo electrónico">
+					<input type="password" id="password" name="password" placeholder="contraseña">
+					<p class="forgot"><a href="#">¿Olvidaste tu contraseña?</a></p>
+					<button id="log" class="log" aria-label="log">Iniciar sesión</button>
+					<hr size="2" width="218px" color="black">
+					<p class="create"><a href="account.html">¿No tienes una cuenta? Créala aquí</a></p>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+<div class="block2">
+
+	<div class="info">
+		<div class="contenedor-texto">
+			<h2 class="titulo"><span class="typed"></span></h2>
+		</div>
+
+			<section class="w3-section w3-card-4">
+				<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Cómo puedo pedir desde la web?</button>
+					<div id="Demo1" class="w3-hide w3-container ">
+						<p>Agrega al carrito todo lo que quieras luego dale click en VER CARRITO.</br>
+							<b>Paso 1:</b> Datos personales Inicia sesión y obtén el 15% de descuento en tu primera compra, aprovecha nuestras ofertas.
+							También puedes pedir como invitado.<br>
+							Recuerda colocar tu correo electrónico para que llegue la confirmación del pedido.
+							<b>Paso 2:</b> Dirección, Nota: hacemos ruta y no tenemos entrega en hora específica, <br>pero nos ayuda mucho si dejas un
+							rango de horario.<br>
+							<b>Paso 3:</b> Método de envío.<br>
+							<b>Paso 4:</b> Método de pago.<br>
+							<b>También en historias destacas encuentras una forma visual de usar la página web para comprar desde casa.</b></p>
+					</div>
+
+					<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Cuáles son sus números de cuenta?</button>
+						<div id="Demo2" class="w3-hide w3-container">
+							<p>Bi- monetaria No. 3551009044      -       Nombre Dazzle<br>
+									Banrural- monetaria No.  7490054439    -     Nombre Dazzle<p>
+						</div>
+
+						<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Cómo puedo pagar mi pedido? <br>Métodos de pago</button>
+							<div id="Demo3" class="w3-hide w3-container">
+								<p>Si pagas al momento de realizar tu pedido (antes de que lo enviemos) aceptamos depósito, transferencia y todas las
+									 tarjetas en nuestra página web, Instagram, fb, tik tok y toda red social.</p>
+							</div>
+
+							<button onclick="myFunction('Demo4')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Puedo pagar contra entrega?</button>
+								<div id="Demo4" class="w3-hide w3-container">
+									<p>Si puedes, si tu pedido es para la ciudad de Guatemala, alrededores o municipios cercanos a la ciudad.
+											Aceptamos pago contra entrega en efectivo o transferencia.<br>
+											Para departamentos el envío es con depósito, pago con tarjeta o transferencia previa.
+											Nuestras cuentas son de Banrural y Banco Industrial a nombre de DAZZLE, si tu transferencia es de otro banco a alguna
+											de nuestras cuentas dependiendo la hora de tu pedido puede demorarse 24 horas más hasta que sea confirmada.
+											<b>NO ACEPTAMOS CHEQUES</b></p>
+								</div>
+
+								<button onclick="myFunction('Demo5')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Tienen lo mismo en las tres tiendas?</button>
+									<div id="Demo5" class="w3-hide w3-container">
+										<p>Accesorios SI, pero se va reduciendo la cantidad disponible debido a las ventas entonces el stock puede ir cambiando de
+												forma rápida.<br><br>
+												Kiosco Miraflores es de accesorios, envíanos cosas 1 vez al a semana de bodega, puedes pedir el traslado de ropa,
+												accesorios o productos de emprendedores, asegúrate de confirmar que el producto se encuentra en kiosco antes de
+												pasar.<br><br>
+												Antigua es nuestra sede y tienda de ropa, accesorios y productos de otros emprendedores, así que es la que cuenta con
+												mayor variedad de mercadería.<br><br>
+												Casa Dazzle (La bodega) todo lo que se muestra en esta web está aquí, y debido a las ventas puede ser que encuentres
+												productos únicamente en web y ya no en tienda.<br><br>
+												<b>Así que si buscas un producto muy específico y fue publicado hace más de una semana te recomendamos consultar
+												existencia y apartarlo.</b></p>
+									</div>
+
+									<button onclick="myFunction('Demo6')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Vuelven a ingresar los mismos estilos <br>de ropa y accesorios?</button>
+										<div id="Demo6" class="w3-hide w3-container">
+											<p>Pocas cosas y solo si recibimos comentarios de que algo les gustó mucho, intentamos renovarnos cada mes, así que <b>si lo
+													ves y no dejas de pensar en el cómpralo porque conseguimos ofertas y cosas geniales que jamás volvemos a ver.</b><br><br>
+													<b>Ejemplo:</b> Kathy llega a Mira y quiere unos aretes de arcoíris, si vemos ese producto ten por seguro que lo pediremos
+													solo por ti y solo por ese comentario estará en la vitrina el mes siguiente, esperamos que regreses por él.</p>
+										</div>
+
+										<button onclick="myFunction('Demo7')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Cantidad en stock?</button>
+											<div id="Demo7" class="w3-hide w3-container">
+												<p>Nos enfocamos más en la variedad y originalidad así que no traemos miles de cada producto. Por eso muchas cosas en
+													el feed de meses anteriores no se encuentran disponibles.</p>
+											</div>
+
+											<button onclick="myFunction('Demo8')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Dazzle es responsable?</button>
+												<div id="Demo8" class="w3-hide w3-container">
+													<p>Tenemos 7 años en el mercado y dos ubicaciones que nos respaldan, confía en que tu pedido llegará. Si tienes dudas
+															sobre el estado de tu pedido o porque no ha llegado el correo de confirmación <b>Whatsapp 4376-5890.</b></p>
+												</div>
+
+												<button onclick="myFunction('Demo9')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Realizan envíos a toda Guatemala?</button>
+													<div id="Demo9" class="w3-hide w3-container">
+														<p>Si realizamos a toda Guatemala por guatex, cargo expresso y mensajería dentro de la ciudad y municipios alrededor de
+															ella.</p>
+													</div>
+
+													<button onclick="myFunction('Demo10')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿En cuánto tiempo enviamos tu pedido?</button>
+														<div id="Demo10" class="w3-hide w3-container">
+															<p>Después de recibido el correo de confirmación, tu pedido llegará, de 24 a 48 horas para ciudad, alrededores y
+																	municipios aledaños. Para departamentos llega de 2 a 5 días debido al horario de Guatex.</p>
+														</div>
+
+														<button onclick="myFunction('Demo11')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Cómo puedo saber el estado mi pedido?</button>
+															<div id="Demo11" class="w3-hide w3-container">
+																<p>Puedes escribirnos a alguna de nuestras redes lo más pronto posible para que nos comuniquemos con el equipo de
+																		mensajería y saber el estado de tu pedido para ciudad, alrededores y municipios cercanos, si eres de departamento te
+																		daremos el número de guía.</p>
+															</div>
+
+															<button onclick="myFunction('Demo12')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Qué pasa si el pedido que llego <br>no es el mío?</button>
+																<div id="Demo12" class="w3-hide w3-container">
+																	<p>Puedes comunicarte por la red social en la que hiciste tu pedido o WhatsApp 4376-5890 y nosotros lo arreglamos sin
+																			ningún problema o cobro adicional.</p>
+																</div>
+
+																<button onclick="myFunction('Demo13')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Cómo cancelar mi envío o cambiar <br>algo en mi pedido?</button>
+																	<div id="Demo13" class="w3-hide w3-container">
+																		<p>Entendemos que existen problemas de última hora, esperamos que se resuelva puedes cancelarlo por WhatsApp 4376-
+																			5890 solo antes de que sea enviado para que no te genere ningún costo y puedas pedir pronto con nosotros.<br><br>
+																			<b>Si quieres cambiar algo solo puedes hacerlo antes de que salga a ruta por Whatsapp.</b></p>
+																	</div>
+
+																	<button onclick="myFunction('Demo14')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Cambios de dirección?</button>
+																		<div id="Demo14" class="w3-hide w3-container">
+																			<p><b>Si tu pedido ya esta ruta no puedes cambiar dirección</b>, o genera doble un cobro de Q25 extra, intenta comunicándote lo
+																					más pronto posible al whatsapp 4376-5890 para que te apoyemos.</b></p>
+																		</div>
+
+							</section>
+						</div>
+					</div>
+
+	<section class="form_acc">
+		<div class="contact">
+			<h3>¿Tienes más dudas?</h3>
+			<h5>¡Contáctanos!</h5>
+			  <select id="asunto" name="asunto" placeholder="Asunto">
+			    <option value="servicio">Servicio al cliente</option>
+			    <option value="soporte">Soporte Técnico</option>
+			  </select>
+				<span class="custom-arrow"></span>
+			<input type="text" id="correo" name="correo" placeholder="Correo electrónico">
+			<textarea id="description" class="desc" name="desc" placeholder="¿Cómo podemos apoyarte?"></textarea>
+			<input type="file" id="myfile" name="myfile"><br>
+			<label for="send">Adjunta un archivo si deseas</label>
+			<br>
+			<button id="send" class="send" aria-label="send">enviar</button>
+		</div>
+	</section>
+
+	<footer class="grid">
+			<article class="footer-nav">
+					<section class="store">
+						<h6>Dazzle Store</h6>
+						<nav class="footer1">
+							<ul>
+								<li><a href="envios.html">Envios</a></li>
+								<li><a href="about_us.html">Sobre Nosotros</a></li>
+								<li><a href="ubicacion.html">Ubicaciones</a></li>
+								<li><a href="contact.html">Contacto y Preguntas Frecuentes</a></li>
+								<li><a href="tyc.html">Terminos y Condiciones</a></li>
+							</ul>
+						</nav>
+					</section>
+					<section class="prod">
+						<h6>Productos</h6>
+						<nav class="footer3">
+							<ul>
+								<li><a href="#">Ofertas</a></li>
+								<li><a href="#">Novedades</a></li>
+							</ul>
+						</nav>
+					</section>
+			</article>
+			<article class="footer-nav">
+				<h6>Ubicación</h6>
+				<nav class="footer2">
+					<ul>
+						<li><a href="#">DAZZLE Plaza del Arco, Antigua Guatemala</a></li>
+						<li><a href="#">(502) 7821-6031</a></li>
+						<li><a href="#">DAZZLE Store C.C. Miraflores, 1er Nivel, Fase 3</a></li>
+						<li><a href="#">(502) 2474-1242</a></li>
+						<li><a href="#">info@ohdazzlestore.com</a></li>
+					</ul>
+				</nav>
+			</article>
+			<article class="footer-nav">
+				<section class="subscribe">
+					<h5>¡Suscríbete!</h5>
+					<p class="info">Obtén las primeras noticias de nuevos productos, ventas, contenido exclusivo, eventos y más.</p>
+					<input type="text" id="email" name="email" placeholder="example@gmail.com">
+					<button id="enviar" class="enviar" aria-label="enviar">Enviar</button>
+				</section>
+			</article>
+			<article class="social-net">
+				<ul class="social">
+					<li><a href="https://www.facebook.com/dazzlegt"><i class="fa-brands fa-facebook-f"></i></a></li>
+					<li><a href="https://www.instagram.com/dazzlegt/"><i class="fa-brands fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+				</ul>
+				<div class="container">
+					<p class="rights">DAZZLE Store. Todos los Derechos Reservados @ 2022</p>
+				</div>
+	</article>
+	</footer>
+	<script>
+		function myFunction(id) {
+			var x = document.getElementById(id);
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+				x.previousElementSibling.className =
+				x.previousElementSibling.className.replace("w3-flat-turquoise", "w3-red");
+			} else {
+				x.className = x.className.replace(" w3-show", "");
+				x.previousElementSibling.className =
+				x.previousElementSibling.className.replace("w3-red", "w3-flat-turquoise");
+			}
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script src="script/type.js"></script>
+</body>
+</html>

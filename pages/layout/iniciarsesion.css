@@ -1,0 +1,96 @@
+.form{
+  padding: 25px;
+  margin: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.form .login{
+  text-align: center;
+  max-width: 450px;
+}
+
+.form .login p{
+  text-align: center;
+  width: 80%;
+  font-family: Josefin Sans;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 15px 35px;
+  margin: auto;
+}
+
+.form .login h5{
+  font-family: DM Serif Display;
+  font-weight: normal;
+  font-size: 32px;
+  padding: 5px 0;
+  margin: 5px 0;
+  margin-top: 30px;
+}
+
+.form .login input{
+  text-align: left;
+  font-size: 14px;
+  font-family: Josefin Sans;
+  width: 90%;
+  color: #F26241;
+  height: auto;
+  background: transparent;
+  border: 2px solid black;
+  padding: 6px;
+  margin: 6px;
+}
+
+.form .login input:focus{
+  color: black;
+}
+
+.form .login .forgot{
+  margin: auto;
+  padding: 30px;
+}
+
+.form .login .forgot a{
+  color: #0AB5A5;
+  font: Josefin Sans;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.form .login .log{
+  background: #F2CC85;
+  width: 172px;
+  height: 41px;
+  margin: 20px auto;
+  font-family: Josefin Sans;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.form .login .log:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+}
+
+hr{
+    margin-top: 20px;
+ }
+
+.form .login .create{
+  margin: auto;
+  padding: 30px;
+}
+
+.form .login .create a{
+  color: #F24405;
+  font: Josefin Sans;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}

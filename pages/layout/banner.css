@@ -1,0 +1,33 @@
+.mySlides{
+  display:none
+}
+
+.w3-left, .w3-right, .w3-badge{
+  cursor:pointer
+}
+
+.w3-badge{
+  height:13px;
+  width:13px;
+  padding:0
+}
+
+.w3-content, .w3-display-container{
+  padding-top: 110px;
+}
+
+@media (max-width: 650px){
+  .w3-content, .w3-display-container{
+    padding-top: 60px;
+  }
+}
+
+/*.banner{
+  padding-bottom: 50px;
+}*/
+
+
+.banner img{
+  width: 100%;
+  height: auto;
+}

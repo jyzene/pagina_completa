@@ -1,0 +1,282 @@
+.product{
+  background-color: #FFFFFF;
+  font-family: Josefin Sans;
+  /*! padding-bottom: 150px; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.product .Card{
+  width: 80%;
+	background: #ffffff;
+  display: flex;
+  margin-top: 100px;
+  padding-top: 50px;
+}
+
+@media (max-width: 800px){
+  .product .Card{
+    flex-direction: column;
+  }
+}
+
+.product .Card .imgBx{
+  position: relative;
+  width: 65%;
+  height: 600px;
+	overflow: hidden;
+}
+
+.product .Card .imgBx img{
+  position: absolute;
+  left: 0;
+	object-fit: cover;
+	transition: 0.5s ease-in-out;
+}
+
+.product .Card .prod_content{
+	padding: 10px;
+}
+
+.product .Card .prod_content .productName h3{
+	font-family: 'DM Serif Display', serif;
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+  font-size: 36px;
+	margin-bottom: 5px 0;
+}
+
+.product .Card .prod_content .price h4{
+	font-family: Josefin Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	text-align: center;
+	margin: 1em;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+.product{
+  padding: 20px;
+  margin: 20px;
+}
+
+.product img{
+  width: 100%;
+  height: auto;
+  transition: .5s;
+}
+
+.product .prod_content{
+	padding: 10px;
+}
+
+.product .prod_content .productName h3{
+	font-family: 'DM Serif Display', serif;
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 5px 0;
+}
+
+.product .prod_content .price h4{
+	font-family: Josefin Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	text-align: center;
+	margin: 1em;
+  padding-top: 10px;
+}*/
+
+.product .prod_content .description{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.product .prod_content .description p{
+  font-family: Josefin Sans;
+	font-weight: 300;
+	font-size: 18px;
+	text-align: center;
+	margin: 1em;
+}
+
+.product .prod_content .description .material{
+  font-family: Josefin Sans;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	margin: 1em;
+}
+
+.product .prod_content .description input{
+  width: 25%;
+  height: 40px;
+  text-align: center;
+  font-family: Josefin Sans;
+  color: #F26241;
+  border: 2px solid black;
+}
+
+.product .prod_content .description .warning{
+  color: #F24405;
+}
+
+.product .prod_content .description .aniadir{
+  width: 55%;
+  height: 50px;
+  margin: 20px;
+  font-family: Josefin Sans;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  background: #F2CC85;
+  border: 2px solid #000000;
+}
+
+.product .prod_content .description .aniadir:hover{
+  background: black;
+  color: white;
+  transition: .5s;
+}
+
+.product .prod_content .description button{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: Josefin Sans;
+}
+
+.product .prod_content .description .wishlist img{
+  width: 12%;
+}
+
+.product .prod_content .description .wishlist img:hover{
+  background-color: #F2786D;
+}
+
+
+.product .prod_content .description .share h5{
+  font-family: 'DM Serif Display', serif;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  font-size: 18px;
+}
+
+.product .prod_content .description .share button{
+  padding: 15px;
+}
+
+.product .prod_content .description .politics{
+  display: flex;
+  justify-content: center;
+}
+
+.product .prod_content .description .politics button{
+  margin: 15px;
+}
+
+.product .prod_content .description .politics button p{
+  width: 100%;
+}
+
+
+
+/*
+
+.product .prod_content .description p{
+  font-family: Josefin Sans;
+	font-weight: 300;
+	font-size: 14px;
+	text-align: center;
+	margin: 1em;
+}
+
+.product .prod_content .description .material{
+  font-family: Josefin Sans;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	margin: 1em;
+}
+
+.product .prod_content .description input{
+  width: 25%;
+  height: 40px;
+  text-align: center;
+  font-family: Josefin Sans;
+  color: #F26241;
+  border: 2px solid black;
+}
+
+.product .prod_content .description .warning{
+  color: #F24405;
+}
+
+.product .prod_content .description .aniadir{
+  width: 55%;
+  height: 50px;
+  margin: 20px;
+  font-family: Josefin Sans;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  background: #F2CC85;
+  border: 2px solid #000000;
+}
+
+.product .prod_content .description .aniadir:hover{
+  background: black;
+  color: white;
+  transition: .5s;
+}
+
+.product .prod_content .description button{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: Josefin Sans;
+}
+
+.product .prod_content .description .wishlist img{
+  width: 12%;
+}
+
+.product .prod_content .description .wishlist img:hover{
+  background-color: #F2786D;
+}
+
+
+.product .prod_content .description .share h5{
+  font-family: 'DM Serif Display', serif;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  font-size: 18px;
+}
+
+.product .prod_content .description .share button{
+  padding: 15px;
+}
+
+.product .prod_content .description .politics button{
+  width: 12%;
+  margin: 15px;
+  display: block;
+}
+
+.product .prod_content .description .politics button p{
+  width: 100%;
+}

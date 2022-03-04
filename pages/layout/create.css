@@ -1,0 +1,129 @@
+.form_acc{
+  padding: 25px;
+  margin: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 650px){
+  .form_acc{
+    margin-top: 100px;
+  }
+}
+
+.form_acc .acc_create{
+  text-align: center;
+  max-width: 450px;
+}
+
+.form_acc .acc_create h5{
+  font-family: DM Serif Display;
+  font-weight: normal;
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.form_acc .acc_create hr{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.form_acc .acc_create input{
+  text-align: left;
+  font-size: 14px;
+  font-family: Josefin Sans;
+  width: 90%;
+  color: #F26241;
+  height: auto;
+  background: transparent;
+  border: 2px solid black;
+  padding: 12px;
+  margin: 6px;
+}
+
+.form_acc .acc_create input:focus{
+  color: black;
+}
+
+/*CSS del checkbox*/
+.form_acc .acc_create .container{
+  display: block;
+  position: relative;
+  margin: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 30px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  font-family: josefin sans;
+}
+
+.form_acc .acc_create .container input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form_acc .acc_create .checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.form_acc .acc_create .container input:checked ~ .checkmark{
+  background-color: #ccc;
+}
+
+.form_acc .acc_create .container input:checked ~ .checkmark{
+  background-color: #2196F3;
+}
+
+.form_acc .acc_create .checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form_acc .acc_create .container input:checked ~ .checkmark:after{
+  display: block;
+}
+
+.form_acc .acc_create .container .checkmark:after{
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+/*finaliza CSS chechbox*/
+
+.form_acc .acc_create .create{
+  background: #F2CC85;
+  width: 172px;
+  height: 41px;
+  margin: 20px auto;
+  font-family: Josefin Sans;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.form_acc .acc_create .create:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+}

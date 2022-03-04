@@ -1,0 +1,144 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header{
+  background-color: white;
+  /*! border: 2px solid black; */
+  padding: 30px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .mostrar-menu{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+header .container .logo{
+  padding-left: 100px;
+}
+
+
+header .container .logo img{
+  width: 200px;
+  padding-left: 20px;
+}
+
+header .container .buttons button{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 15px;
+}
+
+@media (max-width: 750px){
+  header .container .buttons .user{
+      display: none;
+    }
+
+  header .container .logo{
+    padding-left: 50px;
+  }
+
+    header .container .logo img{
+    width: 170px;
+    padding-left: 20px;
+  }
+
+  header .container .buttons button{
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 650px){
+  header{
+    background-color: white;
+    /*! border: 2px solid black; */
+    padding: 20px;
+  }
+
+    header .container .logo{
+    padding-left: 0;
+  }
+
+    header .container .mostrar-menu{
+    font-size: 16px;
+  }
+
+    header .container .logo img{
+    width: 150px;
+    padding-left: 20px;
+  }
+
+    header .container .buttons button{
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  /*padding-block: 2rem;
+  margin-inline: auto;
+  width: min(95%, 70rem);*/
+}
+
+
+@media (max-width: 600px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
+
+    footer .footer-nav:nth-child(3){
+      order: -1;
+  }
+
+}
+
+@media (min-width: 600px){
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+    footer .footer-nav:nth-child(3){
+      text-align: center;
+      grid-column: span 2;
+  }
+
+  footer .social-net{
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1160px){
+  .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+    footer .footer-nav:nth-child(3){
+      text-align: center;
+      grid-column-start: 3;
+  }
+
+  footer .social-net{
+    grid-column: span 3;
+  }
+}

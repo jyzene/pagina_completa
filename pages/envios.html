@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  	<title>Envíos</title>
+  	<script src="https://kit.fontawesome.com/67fe543a2c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  	 <link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+  	integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+  	integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  	<link rel="stylesheet" href="responsive.css"/>
+  </head>
+  <body>
+    <header>
+  		<div class="container">
+  			<button id="mostrar-menu" class="mostrar-menu">
+  				<i class="fa-solid fa-bars"></i>
+  			</button>
+
+  			<a class="logo "href="prueba.html"><img src="img/logo_completo.png"></a>
+
+  			<section class="buttons">
+  				<button href="#bloque1" class="lanzador">
+  					<!--<img src="img/search.svg">-->
+  					<i class="fa fa-search" aria-hidden="true"></i>
+  				</button>
+
+  				<button onclick="document.getElementById('id01').style.display='block'" class="user">
+  					<i class="fa-solid fa-user"></i>
+  				</button>
+
+  				<button id="mostrar-cart" class="mostrar-cart">
+  					<i class="fa-solid fa-cart-shopping"></i>
+  				</button>
+  			</section>
+  		</div>
+  		<div class="menu-nav">
+  			<button id="cerrar-menu" class="cerrar-menu" aria-label="Cerrar">
+  			&times;
+  			</button>
+  			<ul>
+  						<li class="account"><a href="user.html">INICIAR SESION</a></li>
+  						<li><a href="envios.html">ENVIOS</a></li>
+  						<li><a href="about_us.html">SOBRE NOSOTROS</a></li>
+  						<li><a href="ubicacion.html">UBICACIONES</a></li>
+  						<li><a href="contact.html">CONTACTO Y PREGUNTAS FRECUENTES</a></li>
+  						<li><a href="tyc.html">TERMINOS Y CONDICIONES</a></li>
+  			</ul>
+  		</div>
+  		<script src="script/nav.js"></script>
+  		<div id="bloque1" class="bloque-contenedor">
+  			<div class="bloque-contenido">
+  				<input type="text" placeholder="Busca..." name="">
+  				<nav class="categorias">
+  					<ul>
+  						<li><a href="#">Joyeria y Accesorios</a></li>
+  						<li><a href="#">Ropa</a></li>
+  						<li><a href="#">LifeStyle</a></li>
+  						<!--ya no por el momento, va junto a lisfestyle<li><a href="#">Beauty</a></li>-->
+  						<li><a href="#">Sale</a></li>
+  					</ul>
+  				</nav>
+  			</div>
+  		</div>
+  		<script src="script/search.js"></script>
+  		<div class="cart-nav">
+  			<button id="cerrar-cart" class="cerrar-cart" aria-label="Cerrar">
+  				<img src="img/x.svg">
+  			</button>
+  			<h2>Carrito</h2>
+  			<hr>
+  			<p class="cart-text">¡tu carrito esta vacío!</p>
+  		</div>
+  		<script src="script/cart.js"></script>
+  	</header>
+
+  	<div id="id01" class="w3-modal">
+  		<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-hor-8 w3-display-topright">&times;</span>
+  		<div class="w3-modal-content w3-card-8 w3-animate-top" style="max-width:600px">
+
+  			<section class="form">
+  				<div class="login">
+  					<h5>Iniciar sesión</h5>
+  					<p class="info">Ingresa tu correo electrónico y tu contraseña</p>
+  					<input type="text" id="email" name="email" placeholder="correo electrónico">
+  					<input type="text" id="password" name="password" placeholder="contraseña">
+  					<p class="forgot"><a href="#">¿Olvidaste tu contraseña?</a></p>
+  					<button id="log" class="log" aria-label="log">Iniciar sesión</button>
+  					<hr size="2" width="218px" color="black">
+  					<p class="create"><a href="account.html">¿No tienes una cuenta? Créala aquí</a></p>
+  				</div>
+  			</section>
+
+  		</div>
+  	</div>
+
+    <section class="banner">
+      <img src="img/envios.png" alt="envios">
+    </section>
+
+    <div class="block">
+      <div class="info">
+        <h1>¡Tenemos envíos a toda Guatemala!</h1>
+        <h3>Aquí te presentamos nuestras tarifas</h3>
+        <section class="w3-section w3-card-4">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">Ciudad de Guatemala y alrededores</button>
+            <div id="Demo1" class="w3-hide w3-container ">
+              <p><b>Precio:</b> Q.15 (Aplica pago contra entrega)<br>
+                    <b>Alrededores son:</b> Mixco, San Miguel Petapa, Villa Nueva, Villa Canales, Carretera el salvador km.22, zona 15, zona 16,
+                    zona17, zona18, y zona 21.<br> <b>Tiempo estimado de entrega:</b> 24 a 48 hora después de la confirmación de tu
+                    pedido que llegará a tu correo. Si se demora 72 horas seguro es porque esperamos la compensación de la transferencia
+                    si tu banco no es Bi o Banrural.<p>
+            </div>
+
+            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">Otros municipios cercanos a la ciudad</button>
+              <div id="Demo2" class="w3-hide w3-container">
+                <p><b>Precio:</b> Q.25 (Aplica pago contra entrega)<br>
+                      <b>Otros son:</b> Antigua, San Lucas, Amatitlán, Chimaltenango.<br>
+                      <b>Mínimo de compra Q.50.</b><br> <b>Tiempo estimado de entrega:</b> 24 a 48 hora después de la confirmación de tu
+                      pedido que llegará a tu correo. Si se demora 72 horas seguro es porque esperamos la compensación de la transferencia
+                      si tu banco no es Bi o Banrural.<p>
+              </div>
+
+              <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">Departamentos</button>
+                <div id="Demo3" class="w3-hide w3-container">
+                  <p><b>Precio:</b> Q.25 (Se necesita depósito, transfer o pago con tarjeta previo al envío)<br>
+                        Si no depositas el valor del envío de Q.25 Guatex te cobrara de Q.35 a Q.50 o más
+                        dependiendo el tamaño del paquete y tu ubicación durante la entrega.<br>
+                        <b><font color="#0AA394">Ojo si tienes duda de la tarifa para tu ubicación pregunta por WhatsApp, o alguna de nuestras redes.</font></b>
+                        <br> <b>Tiempo estimado de entrega:</b> 2 a 4 días, 2 visitas máximo por cliente, también puedes recoger en la agencia más cercana. <p>
+                </div>
+        </section>
+        <div class="info2">
+          <h3>Horarios de Entrega</h3>
+          <p>De lunes a viernes de 10:00am a 5:00pm y sábados hasta medio día, es ruta así que no manejamos
+            hora exacta de entrega sin embargo nos ayuda mucho si nos dejas un rango de horario con tu dirección.
+            Para fechas especiales extendemos horarios. Los mensajeros no son exclusivos de nuestra empresa,
+            también nos prestan un servicio y nos encantaría que nos dejaras un comentario al respecto.</p>
+        </div>
+        <div class="info3">
+          <h3>Métodos de Pago</h3>
+          <h4>Si pagas al momento de realizar tu pedido (antes de que lo enviemos)
+            aceptamos depósito, transferencia y todas las tarjetas.</h4>
+            <section class="w3-section w3-card-4">
+              <button onclick="myFunction('Demo4')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">¿Puedo pagar contra entrega?</button>
+                <div id="Demo4" class="w3-hide w3-container">
+                  <p>Si puedes, si tu pedido es para la ciudad de Guatemala, alrededores o municipios cercanos a la ciudad.
+                    Aceptamos pago contra entrega en efectivo o transferencia. <b>Para departamentos el envío es con depósito, pago con tarjeta
+                    o transferencia previa.</b> Nuestras cuentas son de Banrural y
+                      Banco Industrial, si tu transferencia es de otro banco a alguna de nuestras cuentas dependiendo la hora de tu pedido
+                      puede demorarse hasta 24 horas más hasta que sea confirmada.<p>
+                </div>
+                <button onclick="myFunction('Demo5')" class="w3-button w3-block w3-flat-turquoise w3-hover-sand w3-left-align">Números de cuenta</button>
+                  <div id="Demo5" class="w3-hide w3-container">
+                    <p>Bi- monetaria No. 3551009044      -       Nombre Dazzle<br>
+                        Banrural- monetaria No.  7490054439    -     Nombre Dazzle<p>
+                  </div>
+          </section>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <footer class="grid">
+  			<article class="footer-nav">
+  					<section class="store">
+  						<h6>Dazzle Store</h6>
+  						<nav class="footer1">
+  							<ul>
+                  <li><a href="envios.html">Envios</a></li>
+  								<li><a href="about_us.html">Sobre Nosotros</a></li>
+  								<li><a href="ubicacion.html">Ubicaciones</a></li>
+  								<li><a href="contact.html">Contacto y Preguntas Frecuentes</a></li>
+  								<li><a href="tyc.html">Terminos y Condiciones</a></li>
+  							</ul>
+  						</nav>
+  					</section>
+  					<section class="prod">
+  						<h6>Productos</h6>
+  						<nav class="footer3">
+  							<ul>
+  								<li><a href="#">Ofertas</a></li>
+  								<li><a href="#">Novedades</a></li>
+  							</ul>
+  						</nav>
+  					</section>
+  			</article>
+  			<article class="footer-nav">
+  				<h6>Ubicación</h6>
+  				<nav class="footer2">
+  					<ul>
+  						<li><a href="#">DAZZLE Plaza del Arco, Antigua Guatemala</a></li>
+  						<li><a href="#">(502) 7821-6031</a></li>
+  						<li><a href="#">DAZZLE Store C.C. Miraflores, 1er Nivel, Fase 3</a></li>
+  						<li><a href="#">(502) 2474-1242</a></li>
+  						<li><a href="#">info@ohdazzlestore.com</a></li>
+  					</ul>
+  				</nav>
+  			</article>
+  			<article class="footer-nav">
+  				<section class="subscribe">
+  					<h5>¡Suscríbete!</h5>
+  					<p class="info">Obtén las primeras noticias de nuevos productos, ventas, contenido exclusivo, eventos y más.</p>
+  					<input type="text" id="email" name="email" placeholder="example@gmail.com">
+  					<button id="enviar" class="enviar" aria-label="enviar">Enviar</button>
+  				</section>
+  			</article>
+  			<article class="social-net">
+  				<ul class="social">
+  					<li><a href="https://www.facebook.com/dazzlegt"><i class="fa-brands fa-facebook-f"></i></a></li>
+  					<li><a href="https://www.instagram.com/dazzlegt/"><i class="fa-brands fa-instagram"></i></a></li>
+  					<li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+  				</ul>
+  				<div class="container">
+  					<p class="rights">DAZZLE Store. Todos los Derechos Reservados @ 2022</p>
+  				</div>
+  	</article>
+  	</footer>
+    <script>
+      function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+          x.previousElementSibling.className.replace("w3-flat-turquoise", "w3-red");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+          x.previousElementSibling.className.replace("w3-red", "w3-flat-turquoise");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+.block{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+
+.block .info{
+  text-align: center;
+  max-width: 700px;
+  margin: 20px;
+}
+
+@media(max-width: 450px){
+  .block .info{
+    text-align: center;
+    margin: 30px;
+  }
+}
+
+.info h1{
+  font-family: DM Serif Display;
+  font-size: 42px;
+  color: #F26241;
+}
+
+.info h3{
+  font-family: DM serif Display;
+  padding: 10px;
+}
+
+.info h4{
+  font-family: DM serif Display;
+  padding: 10px;
+  color: #F2786D;
+}
+
+@media(max-width: 450px){
+  .info h1{
+    font-family: DM Serif Display;
+    font-size: 32px;
+  }
+}
+
+.info button{
+  font-family: Josefin Sans;
+  transition: .3s;
+}
+
+.info p{
+  font-family: Josefin Sans;
+  padding: 10px;
+  text-align: justify;
+}

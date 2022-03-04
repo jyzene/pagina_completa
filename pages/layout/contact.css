@@ -1,0 +1,159 @@
+/*.QA{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.QA .info{
+  text-align: center;
+  max-width: 700px;
+  margin: 20px;
+  align-items: center;
+}
+
+@media(max-width: 450px){
+  .QA .info{
+    text-align: center;
+    margin: 20px;
+  }
+}*/
+
+.block2 .info2{
+  text-align: center;
+  max-width: 700px;
+  margin: 20px;
+  align-items: center;
+}
+
+
+.block2 .info .contenedor-texto{
+  margin-top: 8em;
+}
+
+.block2  .info h2{
+  font-family: DM Serif Display;
+  font-size: 42px;
+  color: #F26241;
+  text-align: center;
+}
+
+.info button{
+  font-family: Josefin Sans;
+  transition: .3s;
+}
+
+.info p{
+  font-family: Josefin Sans;
+  padding: 40px;
+  text-align: justify;
+}
+
+
+.contact{
+  text-align: center;
+  max-width: 650px;
+}
+
+.contact h3{
+  font-family: DM Serif Display;
+  font-weight: normal;
+  font-size: 46px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #F2786D;
+}
+
+.contact h5{
+  font-family: DM Serif Display;
+  font-weight: normal;
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact input{
+  text-align: left;
+  font-size: 14px;
+  font-family: Josefin Sans;
+  width: 90%;
+  color: #F26241;
+  height: auto;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 12px;
+  margin: 12px;
+}
+
+.contact input:focus{
+  color: black;
+}
+
+.contact select{
+  font-size: 14px;
+  font-family: Josefin Sans;
+  padding: 1em 1.5em;
+  width: 90%;
+  background: white;
+  border: 2px solid black;
+}
+
+
+
+.contact .file{
+  background: #F2786D;
+  width: 90%;
+  height: 41px;
+  margin: 20px auto;
+  font-family: Josefin Sans;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.contact .file:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+}
+
+.contact textarea{
+  text-align: left;
+  font-size: 14px;
+  font-family: Josefin Sans;
+  width: 90%;
+  color: #0AB5A5;
+  height: 121px;
+  background: transparent;
+  border: 2px solid black;
+  padding: 12px;
+  margin: 12px;
+}
+
+.contact textarea:focus{
+  color: black;
+}
+
+.contact label{
+  font-family: Josefin Sans;
+}
+
+.contact .send{
+  background: #F2CC85;
+  width: 172px;
+  height: 41px;
+  margin: 20px auto;
+  font-family: Josefin Sans;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.contact .send:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+}

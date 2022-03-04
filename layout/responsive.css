@@ -1,0 +1,40 @@
+/*padding for more height*/
+
+@import url("/layout/banner.css");
+@import url("/layout/section.css");
+@import url("/layout/header.css");
+@import url("/layout/footer.css");
+@import url("/layout/nav.css");
+@import url("/layout/search.css");
+@import url("/layout/cart.css");
+@import url("/layout/product.css");
+@import url("/layout/iniciarsesion.css");
+@import url("/layout/create.css");
+@import url("/layout/envios.css");
+@import url("/layout/about.css");
+@import url("/layout/contact.css");
+@import url("/layout/ubicacion.css");
+@import url("/layout/tyc.css");
+
+
+/*responsive*/
+
+
+
+/*
+@import url("grid/grid-cols.css");
+@import url("grid/grid.css");
+@import url("grid/v-grid.css");
+@import url("grid/v-spacer.css");
+@import url("grid/content.css");
+*/
+
+
+
+
+
+
+
+/*Since we are planning to create a responsive page,
+we do not establish any fixed width values for our sections;
+rather we make it occupy the entire width of the screen.*/
