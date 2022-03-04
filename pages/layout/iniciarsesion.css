@@ -1,6 +1,7 @@
 .form{
   padding: 25px;
   margin: 30px;
+  margin-top: 150px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -94,3 +95,4 @@ hr{
   text-align: center;
   text-decoration: none;
 }
+
