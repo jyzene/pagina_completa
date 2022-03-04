@@ -31,3 +31,36 @@
   width: 100%;
   height: auto;
 }
+
+
+.contenedor-texto2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-color: #F2CC85;
+}
+
+
+@media (max-width: 700px){
+  .contenedor-texto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-color: #F2CC85;
+  }
+
+}
+
+.contenedor-texto2 h2{
+  font-family: DM Serif Display;
+  font-size: 84px;
+  color: White;
+}
