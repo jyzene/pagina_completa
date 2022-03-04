@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Tienda</title>
+	<script src="https://kit.fontawesome.com/67fe543a2c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	 <script src="https://www.w3schools.com/lib/w3.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+	integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+	integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="responsive.css"/>
+</head>
+
+<body>
+	<div id="main">
+	<header>
+		<div class="container">
+			<button id="mostrar-menu" class="mostrar-menu">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+
+			<a class="logo "href="prueba.html"><img src="img/logo_completo.png"></a>
+
+			<section class="buttons">
+				<button href="#bloque1" class="lanzador">
+					<!--<img src="img/search.svg">-->
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
+
+				<button onclick="document.getElementById('id01').style.display='block'" class="user">
+					<i class="fa-solid fa-user"></i>
+				</button>
+
+				<button id="mostrar-cart" class="mostrar-cart">
+					<i class="fa-solid fa-cart-shopping"></i>
+				</button>
+			</section>
+		</div>
+		<div class="menu-nav">
+			<button id="cerrar-menu" class="cerrar-menu" aria-label="Cerrar">
+			&times;
+			</button>
+			<ul>
+						<li class="account"><a href="pages/user.html">INICIAR SESION</a></li>
+						<li><a href="pages/envios.html">ENVIOS</a></li>
+						<li><a href="pages/about_us.html">SOBRE NOSOTROS</a></li>
+						<li><a href="pages/ubicacion.html">UBICACIONES</a></li>
+						<li><a href="pages/contact.html">CONTACTO Y PREGUNTAS FRECUENTES</a></li>
+						<li><a href="pages/tyc.html">TERMINOS Y CONDICIONES</a></li>
+			</ul>
+		</div>
+		<script src="pages/script/nav.js"></script>
+		<div id="bloque1" class="bloque-contenedor">
+			<div class="bloque-contenido">
+				<input type="text" placeholder="Busca..." name="">
+				<nav class="categorias">
+					<ul>
+						<li><a href="#">Joyeria y Accesorios</a></li>
+						<li><a href="#">Ropa</a></li>
+						<li><a href="#">LifeStyle</a></li>
+						<!--ya no por el momento, va junto a lisfestyle<li><a href="#">Beauty</a></li>-->
+						<li><a href="#">Sale</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<script src="script/search.js"></script>
+		<div class="cart-nav">
+			<button id="cerrar-cart" class="cerrar-cart" aria-label="Cerrar">
+				<img src="img/x.svg">
+			</button>
+			<h2>Carrito</h2>
+			<hr>
+			<p class="cart-text">¡tu carrito esta vacío!</p>
+		</div>
+		<script src="script/cart.js"></script>
+	</header>
+
+	<div id="id01" class="w3-modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-hor-8 w3-display-topright">&times;</span>
+		<div class="w3-modal-content w3-card-8 w3-animate-top" style="max-width:600px">
+
+			<section class="form">
+				<div class="login">
+					<h5>Iniciar sesión</h5>
+					<p class="info">Ingresa tu correo electrónico y tu contraseña</p>
+					<input type="text" id="email" name="email" placeholder="correo electrónico">
+					<input type="password" id="password" name="password" placeholder="contraseña">
+					<p class="forgot"><a href="#">¿Olvidaste tu contraseña?</a></p>
+					<button id="log" class="log" aria-label="log">Iniciar sesión</button>
+					<hr size="2" width="218px" color="black">
+					<p class="create"><a href="pages/account.html">¿No tienes una cuenta? Créala aquí</a></p>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+    <div class="contenedor-texto">
+      <h2 class="titulo"><span class="typed5"></span></h2>
+      <p>¡Encuentra el accesorio adecuado para tu outfit!</p>
+    </div>
+
+    <div class="tienda">
+      <div class="detalles">
+        <h5>Precios</h5>
+        <input type="checkbox" id="precio1" name="precio1" value="Bike">
+        <label for="vehicle1">Q0.00 - Q1.00</label><br>
+        <input type="checkbox" id="precio2" name="precio2" value="Car">
+        <label for="vehicle2"> Q14.00 - Q16.00</label><br>
+        <input type="checkbox" id="precio3" name="precio3" value="Boat">
+        <label for="vehicle3"> Q24.00 - Q26.00</label><br>
+        <input type="checkbox" id="precio4" name="precio4" value="Boat">
+        <label for="vehicle4"> Q29.00 - Q31.00</label><br>
+        <input type="checkbox" id="precio5" name="precio5" value="Boat">
+        <label for="vehicle5"> Q34.00 - Q36.00</label><br>
+        <input type="checkbox" id="precio6" name="precio6" value="Boat">
+        <label for="vehicle5"> Q44.00 - Q46.00</label><br>
+        <input type="checkbox" id="precio7" name="precio7" value="Boat">
+        <label for="vehicle7"> Q49.00 - Q51.00</label><br>
+        <input type="checkbox" id="precio8" name="precio8" value="Boat">
+        <label for="vehicle8"> Q64.00 - Q66.00</label><br>
+        <hr>
+        <h5>Letras Disponibles</h5>
+        <input type="checkbox" id="letra1" name="letra1" value="Bike">
+        <label for="vehicle1">Q0.00 - Q1.00</label><br>
+        <input type="checkbox" id="letra2" name="letra2" value="Car">
+        <label for="vehicle2"> Q14.00 - Q16.00</label><br>
+        <input type="checkbox" id="letra3" name="letra3" value="Boat">
+        <label for="vehicle3"> Q24.00 - Q26.00</label><br>
+        <input type="checkbox" id="letra4" name="letra4" value="Boat">
+        <label for="vehicle4"> Q29.00 - Q31.00</label><br>
+        <input type="checkbox" id="letra5" name="letra5" value="Boat">
+        <label for="vehicle5"> Q34.00 - Q36.00</label><br>
+        <input type="checkbox" id="letra6" name="letra6" value="Boat">
+        <label for="vehicle5"> Q44.00 - Q46.00</label><br>
+        <input type="checkbox" id="letra7" name="letra7" value="Boat">
+        <label for="vehicle7"> Q49.00 - Q51.00</label><br>
+        <input type="checkbox" id="letra8" name="letra8" value="Boat">
+        <label for="vehicle8"> Q64.00 - Q66.00</label><br>
+        <hr>
+      </div>
+      <div class="prod_container2">
+        <div class="card">
+				<div class="imgBx">
+					<a href="prod.html">
+						<img src="img/2_1.jpg" class="img-front">
+						<img src="img/1.png" class="img-back">
+					</a>
+						<ul class="action">
+							<li><a href="prod.html"><i class="fa fa-eye" aria-hidden="true"></i><span>Detalles</span></a></li>
+							<li><a href="prod.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>Comprar</span></a></li>
+							<li><a href="wishlist.html"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></a></li>
+						</ul>
+				</div>
+				<div class="prod_content">
+					<div class="productName">
+						<h3>cristales simples, piercing</h3>
+					</div>
+					<div class="price">
+						<h4>Q65.00</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="imgBx">
+					<img src="img/2_2.png" class="img-front">
+					<img src="img/2.png" class="img-back">
+					<ul class="action">
+						<li><i class="fa fa-eye" aria-hidden="true"></i><span>Detalles</span></li>
+						<li><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>Comprar</span></li>
+						<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></li>
+					</ul>
+				</div>
+				<div class="prod_content">
+					<div class="productName">
+						<h3> Argollas simples, Aretes</h3>
+					</div>
+					<div class="price">
+						<h4>Q35.00</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="imgBx">
+					<img src="img/2_2.png" class="img-front">
+					<img src="img/3.png" class="img-back">
+					<ul class="action">
+						<li><i class="fa fa-eye" aria-hidden="true"></i><span>Detalles</span></li>
+						<li><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>Comprar</span></li>
+						<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></li>
+					</ul>
+				</div>
+				<div class="prod_content">
+					<div class="productName">
+						<h3>Twinkle butterfly, collar</h3>
+					</div>
+					<div class="price">
+						<h4>Q45.00</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="imgBx">
+					<img src="img/2_2.png" class="img-front">
+					<img src="img/4.png" class="img-back">
+					<ul class="action">
+						<li><i class="fa fa-eye" aria-hidden="true"></i><span>Detalles</span></li>
+						<li><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>Comprar</span></li>
+						<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></li>
+					</ul>
+				</div>
+				<div class="prod_content">
+					<div class="productName">
+						<h3>Gato desigual, aretes</h3>
+					</div>
+					<div class="price">
+						<h4>Q25.00</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="imgBx">
+					<img src="img/2_2.png" class="img-front">
+					<img src="img/5.png" class="img-back">
+					<ul class="action">
+						<li><i class="fa fa-eye" aria-hidden="true"></i><span>Detalles</span></li>
+						<li><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>Comprar</span></li>
+						<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></li>
+					</ul>
+				</div>
+				<div class="prod_content">
+					<div class="productName">
+						<h3>Corazon doble locket, collar</h3>
+					</div>
+					<div class="price">
+						<h4>Q50.00</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="imgBx">
+					<img src="img/2_2.png" class="img-front">
+					<img src="img/6.png" class="img-back">
+					<ul class="action">
+						<li><i class="fa fa-eye" aria-hidden="true"></i><span>Detalles</span></li>
+						<li><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>Comprar</span></li>
+						<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></li>
+					</ul>
+				</div>
+				<div class="prod_content">
+					<div class="productName">
+						<h3>Dinosaurios, aretes stud</h3>
+					</div>
+					<div class="price">
+						<h4>Q50.00</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="imgBx">
+					<img src="img/2_2.png" class="img-front">
+					<img src="img/7.png" class="img-back">
+					<ul class="action">
+						<li><i class="fa fa-eye" aria-hidden="true"></i><span>Detalles</span></li>
+						<li><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>Comprar</span></li>
+						<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></li>
+					</ul>
+				</div>
+				<div class="prod_content">
+					<div class="productName">
+						<h3>diosa griega, choker collar</h3>
+					</div>
+					<div class="price">
+						<h4>Q45.00</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="imgBx">
+					<img src="img/2_2.png" class="img-front">
+					<img src="img/8.png" class="img-back">
+					<ul class="action">
+						<li><i class="fa fa-eye" aria-hidden="true"></i><span>Detalles</span></li>
+						<li><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>Comprar</span></li>
+						<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></li>
+					</ul>
+				</div>
+				<div class="prod_content">
+					<div class="productName">
+						<h3>sakura choker collar negro</h3>
+					</div>
+					<div class="price">
+						<h4>Q50.00</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+      </div>
+
+
+  <footer class="grid">
+			<article class="footer-nav">
+					<section class="store">
+						<h6>Dazzle Store</h6>
+						<nav class="footer1">
+							<ul>
+								<li><a href="envios.html">Envios</a></li>
+								<li><a href="about_us.html">Sobre Nosotros</a></li>
+								<li><a href="ubicacion.html">Ubicaciones</a></li>
+								<li><a href="contact.html">Contacto y Preguntas Frecuentes</a></li>
+								<li><a href="tyc.html">Terminos y Condiciones</a></li>
+							</ul>
+						</nav>
+					</section>
+					<section class="prod">
+						<h6>Productos</h6>
+						<nav class="footer3">
+							<ul>
+								<li><a href="#">Ofertas</a></li>
+								<li><a href="#">Novedades</a></li>
+							</ul>
+						</nav>
+					</section>
+			</article>
+			<article class="footer-nav">
+				<h6>Ubicación</h6>
+				<nav class="footer2">
+					<ul>
+						<li><a href="#">DAZZLE Plaza del Arco, Antigua Guatemala</a></li>
+						<li><a href="#">(502) 7821-6031</a></li>
+						<li><a href="#">DAZZLE Store C.C. Miraflores, 1er Nivel, Fase 3</a></li>
+						<li><a href="#">(502) 2474-1242</a></li>
+						<li><a href="#">info@ohdazzlestore.com</a></li>
+					</ul>
+				</nav>
+			</article>
+			<article class="footer-nav">
+				<section class="subscribe">
+					<h5>¡Suscríbete!</h5>
+					<p class="info">Obtén las primeras noticias de nuevos productos, ventas, contenido exclusivo, eventos y más.</p>
+					<input type="text" id="email" name="email" placeholder="example@gmail.com">
+					<button id="enviar" class="enviar" aria-label="enviar">Enviar</button>
+				</section>
+			</article>
+			<article class="social-net">
+				<ul class="social">
+					<li><a href="https://www.facebook.com/dazzlegt"><i class="fa-brands fa-facebook-f"></i></a></li>
+					<li><a href="https://www.instagram.com/dazzlegt/"><i class="fa-brands fa-instagram"></i></a></li>
+					<li><a href="https://www.tiktok.com/@dazzlegt"><i class="fa-brands fa-tiktok"></i></a></li>
+				</ul>
+				<div class="container">
+					<p class="rights">DAZZLE Store. Todos los Derechos Reservados @ 2022</p>
+				</div>
+	</article>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+	integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+	<script>
+	// Get the modal
+	var modal = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+			if (event.target == modal) {
+					modal.style.display = "none";
+			}
+	}
+	</script>
+
+	<!--carrousel js-->
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		showDivs(slideIndex += n);
+		}
+
+		function currentDiv(n) {
+		showDivs(slideIndex = n);
+		}
+
+		function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("demo");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length} ;
+		for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			 dots[i].className = dots[i].className.replace(" w3-white", "");
+		}
+		x[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " w3-white";
+		}
+	</script>
+
+	<script>
+		w3.slideshow(".mySlides", 5500);
+	</script>
+<script src="script/typestore.js"></script>
+</body>
+</html>
