@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Inicio</title>
 	<script src="https://kit.fontawesome.com/67fe543a2c.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	 <script src="https://www.w3schools.com/lib/w3.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,7 +65,7 @@
 				<input type="text" placeholder="Busca..." name="">
 				<nav class="categorias">
 					<ul>
-						<li><a href="#">Joyeria y Accesorios</a></li>
+						<li><a href="pages/tienda.html">Joyeria y Accesorios</a></li>
 						<li><a href="#">Ropa</a></li>
 						<li><a href="#">LifeStyle</a></li>
 						<!--ya no por el momento, va junto a lisfestyle<li><a href="#">Beauty</a></li>-->
@@ -95,7 +96,7 @@
 					<p class="info">Ingresa tu correo electrónico y tu contraseña</p>
 					<input type="text" id="email" name="email" placeholder="correo electrónico">
 					<input type="password" id="password" name="password" placeholder="contraseña">
-					<p class="forgot"><a href="#">¿Olvidaste tu contraseña?</a></p>
+					<p class="forgot"><a href="pages/contra.html">¿Olvidaste tu contraseña?</a></p>
 					<button id="log" class="log" aria-label="log">Iniciar sesión</button>
 					<hr size="2" width="218px" color="black">
 					<p class="create"><a href="pages/account.html">¿No tienes una cuenta? Créala aquí</a></p>
@@ -154,9 +155,9 @@
 						<img src="pages/img/1.png" class="img-back">
 					</a>
 						<ul class="action">
-							<li><a href="prod.html"><i class="fa fa-eye" aria-hidden="true"></i><span>Detalles</span></a></li>
-							<li><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>Comprar</span></li>
-							<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></li>
+							<li><a href="pages/prod.html"><i class="fa fa-eye" aria-hidden="true"></i><span>Detalles</span></a></li>
+							<li><a href="prod.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>Comprar</span></a></li>
+							<li><a href="pages/tienda.html"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></a></li>
 						</ul>
 				</div>
 				<div class="prod_content">
@@ -312,9 +313,9 @@
 		<div class="clearfix"></div>
 	</section>
 
-	<section class="banner">
-		<img src="pages/img/sale_banner2.png" alt="sale">
-	</section>
+		<div class="contenedor-texto2">
+      <h2 class="titulo"><span class="typed4"></span></h2>
+    </div>
 
 	<section class="instagram">
 		<h3>¡Síguenos en instagram!</h3>
@@ -459,6 +460,8 @@
 	<script>
 		w3.slideshow(".mySlides", 5500);
 	</script>
+
 </div>
+<script src="pages/script/typesale.js"></script>
 </body>
 </html>
