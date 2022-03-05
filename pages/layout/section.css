@@ -116,6 +116,34 @@
   }
 }
 
+@media (max-width: 1600px){
+  .prod_container{
+    left: 180px;
+  }
+}
+
+
+@media (max-width: 1440px){
+  .prod_container{
+    left: 140px;
+  }
+}
+
+@media (max-width: 1300px){
+  .prod_container{
+    left: 50px;
+  }
+}
+
+@media (max-width: 1150px){
+  .prod_container{
+    left: 0;
+  }
+}
+
+
+
+
 @media only screen and (min-width: 1200px){
   .prod_container{
   	position: relative;
