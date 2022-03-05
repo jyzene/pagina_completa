@@ -101,7 +101,6 @@
 }
 
 .prod_container{
-	max-width: 1440px;
 	width: auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
