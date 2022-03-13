@@ -4,6 +4,39 @@
   margin-left: 10px;
 }
 
+.filtros{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (max-width: 750px){
+  .filtros{
+    flex-direction: column;
+  }
+}
+
+.filtros h5{
+  margin-right: 20px;
+  font-family: Josefin Sans;
+}
+
+.filtros select{
+  font-size: 14px;
+  font-family: Josefin Sans;
+  padding: 1em 1.5em;
+  width: 20%;
+  background: white;
+  border: 2px solid black;
+}
+
+@media (max-width: 750px){
+  .filtros select{
+    width: 80%;
+  }
+}
+
 .tienda .detalles{
   text-align: center;
   margin-left: 50px;
@@ -61,6 +94,51 @@
   }
 }
 
+.tienda .prod_container2 .card .etiqueta{
+  position: relative;
+  z-index: 1;
+  top: 70px;
+  left: -15px;
+  width: 100px;
+  height: 50px;
+  background: #CE95FC;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  display: block;
+}
+
+.tienda .prod_container2 .card .etiqueta p{
+  font-family: Josefin Sans;
+  font-size: 15px;
+  color: white;
+  top: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.tienda .prod_container2 .card .etiqueta::before{
+  content: ' ';
+  position: absolute;
+  width: 15px;
+  top: 50px;
+  height: 30px;
+  background: black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: #664A7D;
+  z-index: 2;
+}
+
+.tienda .prod_container2 .card .etiqueta::after{
+  content: ' ';
+  position: absolute;
+  width: 15px;
+  top: 50px;
+  height: 15px;
+  background: black;
+  background: #CE95FC;
+  z-index: 1;
+}
 
 
 .tienda .prod_container2 .card .imgBx{
@@ -204,6 +282,14 @@
 	font-size: 18px;
 	text-align: center;
 	margin: 1em;
+}
+
+.tienda .prod_container2 .card .prod_content .price h3{
+  font-family: Josefin Sans;
+	font-style: normal;
+	font-size: 18px;
+	text-align: center;
+  color: #F24405;
 }
 
 .clearfix:after {
