@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>DAZZLE</title>
+	<title>Inicio</title>
 	<script src="https://kit.fontawesome.com/67fe543a2c.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	 <script src="https://www.w3schools.com/lib/w3.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,18 +18,18 @@
 	integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
 	integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="responsive.css"/>
+	<link rel="stylesheet" href="pages/responsive.css"/>
 </head>
 
 <body>
+	<div id="main">
 	<header>
 		<div class="container">
 			<button id="mostrar-menu" class="mostrar-menu">
 				<i class="fa-solid fa-bars"></i>
 			</button>
 
-			<a class="logo "href="index.html"><img src="img/logo_completo.png"></a>
-
+			<a class="logo "href="index.html"><img src="pages/img/logo_completo.png"></a>
 
 			<section class="buttons">
 				<button href="#bloque1" class="lanzador">
@@ -50,21 +51,21 @@
 			&times;
 			</button>
 			<ul>
-				<li><a href="/pages/index.html">INICIO</a></li>
-				<li><a href="tienda.html">STORE</a></li>
-					<li class="account"><a href="pages/user.html">INICIAR SESION</a></li>
-					<li><a href="envios.html">ENVIOS</a></li>
-					<li><a href="about_us.html">SOBRE NOSOTROS</a></li>
-					<li><a href="ubicacion.html">UBICACIONES</a></li>
+					<li><a href="index.html">INICIO</a></li>
+					<li><a href="pages/tienda.html">STORE</a></li>
+						<li class="account"><a href="pages/user.html">INICIAR SESION</a></li>
+						<li><a href="pages/envios.html">ENVIOS</a></li>
+						<li><a href="pages/about_us.html">SOBRE NOSOTROS</a></li>
+						<li><a href="pages/ubicacion.html">UBICACIONES</a></li>
 			</ul>
 		</div>
-		<script src="script/nav.js"></script>
+		<script src="pages/script/nav.js"></script>
 		<div id="bloque1" class="bloque-contenedor">
 			<div class="bloque-contenido">
 				<input type="text" placeholder="Busca..." name="">
 				<nav class="categorias">
 					<ul>
-						<li><a href="#">Joyeria y Accesorios</a></li>
+						<li><a href="pages/tienda.html">Joyeria y Accesorios</a></li>
 						<li><a href="#">Ropa</a></li>
 						<li><a href="#">LifeStyle</a></li>
 						<!--ya no por el momento, va junto a lisfestyle<li><a href="#">Beauty</a></li>-->
@@ -73,16 +74,16 @@
 				</nav>
 			</div>
 		</div>
-		<script src="script/search.js"></script>
+		<script src="pages/script/search.js"></script>
 		<div class="cart-nav">
 			<button id="cerrar-cart" class="cerrar-cart" aria-label="Cerrar">
-				<img src="img/x.svg">
+				<img src="pages/img/x.svg">
 			</button>
 			<h2>Carrito</h2>
 			<hr>
 			<p class="cart-text">¡tu carrito esta vacío!</p>
 		</div>
-		<script src="script/cart.js"></script>
+		<script src="pages/script/cart.js"></script>
 	</header>
 
 	<div id="id01" class="w3-modal">
