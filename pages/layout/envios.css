@@ -17,6 +17,13 @@
   }
 }
 
+.contenedor-texto3 .titulo{
+  margin-top: 150px;
+  font-family: DM Serif Display;
+  color: #F2CC85;
+  text-align: center;
+}
+
 .info h1{
   font-family: DM Serif Display;
   font-size: 42px;
