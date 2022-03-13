@@ -18,7 +18,7 @@
 
 @media (max-width: 650px){
   .w3-content, .w3-display-container{
-    padding-top: 60px;
+    padding-top: 80px;
   }
 }
 
@@ -44,6 +44,10 @@
   background-color: #F2CC85;
 }
 
+.contenedor-texto2 a{
+  text-decoration: none;
+}
+
 
 @media (max-width: 700px){
   .contenedor-texto2{
@@ -64,3 +68,4 @@
   font-size: 84px;
   color: White;
 }
+
